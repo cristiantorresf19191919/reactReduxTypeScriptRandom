@@ -1,13 +1,203 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@media (max-width: 450px) {
+  .MuiTypography-root .MuiTypography-h4,
+  h4 {
+    font-size: 23px !important;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (max-width: 450px) {
+  .MuiTypography-h5 {
+    font-size: 15px !important;
+  }
 }
+
+.home-container {
+  padding: 1rem;
+}
+
+.MuiPaper-root {
+  margin: auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.paper-customized {
+  height: 98vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.paper-customized > div:nth-child(1) {
+  -webkit-animation-name: coolEntrance;
+          animation-name: coolEntrance;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-timing-function: cubic-bezier(0.04, 1.85, 0.14, 0.31);
+          animation-timing-function: cubic-bezier(0.04, 1.85, 0.14, 0.31);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.paper-customized > div:nth-child(2) {
+  -webkit-animation-name: coolEntrance;
+          animation-name: coolEntrance;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-timing-function: cubic-bezier(0.04, 1.85, 0.14, 0.31);
+          animation-timing-function: cubic-bezier(0.04, 1.85, 0.14, 0.31);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.paper-customized > div:nth-child(3) {
+  -webkit-animation-name: coolEntrance;
+          animation-name: coolEntrance;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-timing-function: cubic-bezier(0.04, 1.85, 0.14, 0.31);
+          animation-timing-function: cubic-bezier(0.04, 1.85, 0.14, 0.31);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.paper-customized > div:nth-child(4) {
+  -webkit-animation-name: coolEntrance;
+          animation-name: coolEntrance;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.04, 1.85, 0.14, 0.31);
+          animation-timing-function: cubic-bezier(0.04, 1.85, 0.14, 0.31);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+}
+
+.buttons-container {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.buttons-container button {
+  margin: 0 5px;
+}
+
+.questiontext-card {
+  text-align: center;
+  padding: 27px;
+  border: 1px solid #e0e0e0;
+  -webkit-box-shadow: 1px 2px 3px #767474;
+          box-shadow: 1px 2px 3px #767474;
+}
+
+.resume-card {
+  text-align: center;
+  padding: 27px;
+  border: 1px solid #e0e0e0;
+  -webkit-box-shadow: 1px 2px 3px #767474;
+          box-shadow: 1px 2px 3px #767474;
+  height: 19rem;
+  margin: 2% 0 0 0;
+  width: 98%;
+  overflow-y: scroll;
+}
+
+.final_title {
+  text-align: center;
+  font-weight: 900;
+}
+
+.success-chip {
+  background: #53ec53;
+  border: 1px solid #615f5f80;
+  border-radius: 13px;
+  padding: 6px 27px;
+  margin: 2% 0;
+  -webkit-box-shadow: 2px 3px 1px #000000bd;
+          box-shadow: 2px 3px 1px #000000bd;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.success-chip h5 {
+  font-size: 19px;
+}
+
+.wrong-chip {
+  background: #f53636;
+  border: 1px solid #615f5f80;
+  border-radius: 13px;
+  padding: 6px 27px;
+  margin: 2% 0;
+  -webkit-box-shadow: 2px 3px 7px #222;
+          box-shadow: 2px 3px 7px #222;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrong-chip h5 {
+  font-size: 19px;
+}
+
+@-webkit-keyframes coolEntrance {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    color: #3f3e3e;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    color: black;
+  }
+}
+
+@keyframes coolEntrance {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    color: #3f3e3e;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    color: black;
+  }
+}
+/*# sourceMappingURL=index.css.map */

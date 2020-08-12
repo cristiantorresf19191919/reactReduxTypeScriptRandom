@@ -1,0 +1,139 @@
+@mixin animationDelayEach($time, $factor) {
+  @for $i from 1 through 4 {
+    & > div:nth-child(#{$i}) {
+      animation-name: coolEntrance;
+      animation-duration: 3s;
+      animation-delay: #{$time}s;
+      animation-timing-function: cubic-bezier(0.04, 1.85, 0.14, 0.31);
+      animation-fill-mode: both;
+    }
+    $time: $time + $factor;
+  }
+}
+
+@mixin telefono {
+  @media (max-width: 450px) {
+    @content;
+  }
+}
+@mixin tableta {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+.MuiTypography-root .MuiTypography-h4,
+h4 {
+  @include telefono() {
+    font-size: 23px !important;
+  }
+
+  @include tableta() {
+  }
+}
+
+.MuiTypography-h5 {
+  @include telefono() {
+    font-size: 15px !important;
+  }
+
+  @include tableta() {
+  }
+}
+
+.home-container {
+  padding: 1rem;
+}
+
+.MuiPaper-root {
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper-customized {
+  height: 98vh;
+  justify-content: space-between;
+  @include animationDelayEach(0.2, 0.1);
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+}
+
+.buttons-container {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  button {
+    margin: 0 5px;
+  }
+}
+
+.questiontext-card {
+  text-align: center;
+  padding: 27px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 1px 2px 3px #767474;
+}
+
+.resume-card {
+    text-align: center;
+    padding: 27px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 1px 2px 3px #767474;
+    height: 19rem;
+    margin: 2% 0 0 0;
+    width: 98%;
+    overflow-y: scroll;
+}
+
+.final_title {
+  text-align: center;
+  font-weight: 900;
+}
+
+.success-chip {
+    background: #53ec53;
+    border: 1px solid #615f5f80;
+    border-radius: 13px;
+    padding: 6px 27px;
+    margin: 2% 0;
+    box-shadow: 2px 3px 1px #000000bd;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  h5{
+      font-size: 19px;
+  }
+}
+.wrong-chip {
+  background: #f53636;
+  border: 1px solid #615f5f80;
+  border-radius: 13px;
+  padding: 6px 27px;
+  margin: 2% 0;
+  box-shadow: 2px 3px 7px #222;
+  font-size: 15px;
+  display: flex;
+  h5{
+      font-size: 19px;
+  }
+}
+
+@keyframes coolEntrance {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+    color: rgb(63, 62, 62);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    color: black;
+  }
+}
