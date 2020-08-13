@@ -103,10 +103,7 @@ const QuestionItemUnconnected: React.FC<Props> = ({
           <Typography variant="h5">
             {questionNumberFixed} of {questions.length}
           </Typography>
-        </div>
-        <div>
-          <p>respuesta deseada {question && question.correct_answer}</p>
-        </div>
+        </div>      
         <div className="buttons-container">
           <Button
             variant="contained"
