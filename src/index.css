@@ -34,7 +34,7 @@
 }
 
 .paper-customized {
-  height: 98vh;
+  height: 89vh;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -154,7 +154,7 @@
 }
 
 .wrong-chip {
-  background: #f53636;
+  background: #ee8686;
   border: 1px solid #615f5f80;
   border-radius: 13px;
   padding: 6px 27px;
